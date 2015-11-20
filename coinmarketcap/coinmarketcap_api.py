@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from coinmarketcap_utils import coin_info
-from coinmarketcap_utils import update_info
-from coinmarketcap_utils import top_currencies
-from coinmarketcap_utils import market_cap_info
-from coinmarketcap_utils import coinmarketcap_info
+from coinmarketcap.coinmarketcap_utils import coin_info
+from coinmarketcap.coinmarketcap_utils import update_info
+from coinmarketcap.coinmarketcap_utils import top_currencies
+from coinmarketcap.coinmarketcap_utils import market_cap_info
+from coinmarketcap.coinmarketcap_utils import coinmarketcap_info
 
 __title__   = 'coinmarketcap'
 __version__ = '0.7'
