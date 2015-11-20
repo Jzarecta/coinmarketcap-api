@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 #            _                            _        _                  
@@ -16,7 +16,7 @@ __author__  = '@c0ding'
 __repo__    = 'https://github.com/c0ding/coinmarketcap-api'
 __license__ = 'Apache v2.0 License'
 
-from coinmarketcap_api import (
+from coinmarketcap.coinmarketcap_api import (
 	about, rank, name, short, market_cap, price, coin_supply, market_volume,
 	cap_change_1h, cap_change_24h, cap_change_7d, top, mineable, premined, 
 	last_updated, total_market_cap, stats, coin_summary
