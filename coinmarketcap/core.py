@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import urllib2
+import sys
+
+import requests
 
 class Market(object):
 
 	def __init__(self, base_url='https://api.coinmarketcap.com/v1/'):
 		self.base_url = base_url
-		self.opener = urllib2.build_opener()
-		self.opener.addheaders.append(('Content-Type', 'application/json'))
-		self.opener.addheaders.append(('User-agent', 'coinmarketcap - python wrapper \
-		around coinmarketcap.com (github.com/mrsmn/coinmarketcap-api)'))
+		headers = {'Content-Type': 'application/json', 'User-agent', 'coinmarketcap - python wrapper \
+		around coinmarketcap.com (github.com/mrsmn/coinmarketcap-api'}
+		self.opener = requests.get(base_url, headers=headers)
 
 	def _urljoin(self, *args):
 		""" Internal urljoin function because urlparse.urljoin sucks """
