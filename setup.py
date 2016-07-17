@@ -13,6 +13,6 @@ setup(
     license = 'Apache v2.0 License',
     packages = ['coinmarketcap'],
     description = 'Python API for coinmarketcap.com.',
-    long_description = file('README.md','r').read(),
+    long_description = open('README.md','r').read(),
     keywords = ['Scrypt', 'SHA256d', 'cryptocurrency', 'API', 'LTC', 'Litecoin', 'BTC', 'Bitcoin', 'DOGE', 'Dogecoin'],
 )
